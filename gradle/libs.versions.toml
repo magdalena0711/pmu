@@ -13,8 +13,10 @@ activityCompose = "1.9.3"
 navigationCompose = "2.8.3"
 composeBom = "2024.04.01"
 roomDatabase = "2.6.1"
+metamask = "7.36.0"
 
 [libraries]
+metamask-sdk = { group = "io.metamask.androidsdk", name = "metamask-android-sdk", version = "0.6.6" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

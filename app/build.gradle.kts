@@ -68,4 +68,8 @@ dependencies {
     // hilt di
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler) // add the plugin also!
+
+    implementation (libs.metamask.sdk)
+    //implementation ("io.metamask.androidsdk:metamask-android-sdk:7.36.0")
+
 }
