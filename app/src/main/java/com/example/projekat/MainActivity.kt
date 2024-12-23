@@ -25,6 +25,7 @@ import com.example.projekat.screens.ChallengesScreen
 import com.example.projekat.screens.FriendsScreen
 import com.example.projekat.screens.HomeScreen
 import com.example.projekat.screens.LoginScreen
+import com.example.projekat.screens.RegisterScreen
 import com.example.projekat.screens.SetGoalScreen
 import com.example.projekat.ui.theme.ProjekatTheme
 
@@ -49,7 +50,7 @@ fun MainApp(modifier: Modifier = Modifier) {
 
     Scaffold(
         bottomBar = {
-            if (currentRoute != LoginDestination.route) {
+            if (currentRoute != LoginDestination.route && currentRoute != RegisterDestination.route) {
                 NavigationBar {
                     homeNavigation.forEach { navDestination ->
                         NavigationBarItem(
@@ -84,6 +85,9 @@ fun MainApp(modifier: Modifier = Modifier) {
         ) {
             composable(route = LoginDestination.route) {
                 LoginScreen(modifier = modifier, navController = navController)
+            }
+            composable(route = RegisterDestination.route) {
+                RegisterScreen(modifier = modifier, navController = navController)
             }
             composable(route = HomeDestination.route) {
                 HomeScreen(modifier = modifier, navController = navController)

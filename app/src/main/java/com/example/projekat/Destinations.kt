@@ -1,6 +1,7 @@
 package com.example.projekat
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AddCircle
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Email
@@ -18,6 +19,11 @@ interface Destination {
 object LoginDestination : Destination {
     override val icon = Icons.Default.Lock
     override val route = "Login"
+}
+
+object RegisterDestination : Destination {
+    override val icon = Icons.Default.AddCircle
+    override val route = "Register"
 }
 
 object HomeDestination : Destination {

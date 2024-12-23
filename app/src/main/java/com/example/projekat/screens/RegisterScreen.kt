@@ -15,15 +15,15 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.navigation.NavHostController
 import com.example.projekat.HomeDestination
 import com.example.projekat.LoginDestination
-import com.example.projekat.RegisterDestination
 
 @Composable
-fun LoginScreen(
+fun RegisterScreen(
     modifier: Modifier = Modifier,
     navController: NavHostController
 ) {
     var username by rememberSaveable { mutableStateOf("") }
     var password by rememberSaveable { mutableStateOf("") }
+    var repeatedPassword by rememberSaveable { mutableStateOf("") }
 
     Column(modifier = modifier) {
         Text(text = "Login Screen")
@@ -40,29 +40,19 @@ fun LoginScreen(
             visualTransformation = PasswordVisualTransformation(),
             modifier = modifier
         )
-        Button(
-            onClick = {
-                if (username == "ilija" && password == "ilija123") {
-                    username = ""
-                    password = ""
-                    navController.navigate(HomeDestination.route) {
-                        launchSingleTop = true
-                        restoreState = true
-                        popUpTo(LoginDestination.route) {
-                            saveState = true
-                            inclusive = true
-                        }
-                    }
-                }
-            },
+        OutlinedTextField(
+            value = repeatedPassword,
+            onValueChange = { repeatedPassword = it },
+            label = { Text(text = "Repeat password") },
+            visualTransformation = PasswordVisualTransformation(),
             modifier = modifier
         )
-        {
-            Text(text = "Log in")
-        }
         Button(
             onClick = {
-                navController.navigate(RegisterDestination.route) {
+                username = ""
+                password = ""
+                repeatedPassword = ""
+                navController.navigate(LoginDestination.route) {
                     launchSingleTop = true
                     restoreState = true
                     popUpTo(LoginDestination.route) {
