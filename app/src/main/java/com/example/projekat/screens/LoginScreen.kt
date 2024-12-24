@@ -1,5 +1,6 @@
 package com.example.projekat.screens
 
+import android.content.res.Resources
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
@@ -11,10 +12,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.navigation.NavHostController
 import com.example.projekat.HomeDestination
 import com.example.projekat.LoginDestination
+import com.example.projekat.R
 import com.example.projekat.RegisterDestination
 
 @Composable
@@ -26,11 +29,11 @@ fun LoginScreen(
     var password by rememberSaveable { mutableStateOf("") }
 
     Column(modifier = modifier) {
-        Text(text = "Login Screen")
+        Text(text = stringResource( R.string.login))
         OutlinedTextField(
             value = username,
             onValueChange = { username = it },
-            label = { Text(text = "Username") },
+            label = { Text(text = stringResource( R.string.username)) },
             modifier = modifier
         )
         OutlinedTextField(

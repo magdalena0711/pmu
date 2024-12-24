@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Projekat</string>
+    <string name="start">Početak</string>
+    <string name="end">Kraj</string>
+    <string name="resume">Nastavi</string>
+    <string name="start_recording">Počni snimanje</string>
+    <string name="congrats">Čestitam</string>
+    <string name="you">Ti</string>
+    <string name="end_recording">Zaustavi snimanje</string>
+    <string name="route">Ruta</string>
+    <string name="date">Datum</string>
+    <string name="time">Vreme</string>
+    <string name="post">Objava</string>
+    <string name="my_profile">Moj profil</string>
+    <string name="name">Ime</string>
+    <string name="lastname">Prezime</string>
+    <string name="username">Korisničko ime</string>
+    <string name="age">Godine</string>
+    <string name="daily_goal">Dnevni cilj</string>
+    <string name="register">Registracija</string>
+    <string name="login">Prijava</string>
+    <string name="logout">Odjava</string>
+</resources>

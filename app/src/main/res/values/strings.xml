@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Projekat</string>
+    <string name="app_name">Project</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="resume">Resume</string>
+    <string name="start_recording">Start recording</string>
+    <string name="congrats">Congratulations</string>
+    <string name="you">You</string>
+    <string name="end_recording">End recording</string>
+    <string name="route">Route</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="post">Post</string>
+    <string name="my_profile">My profile</string>
+    <string name="name">Name</string>
+    <string name="lastname">Lastname</string>
+    <string name="username">Username</string>
+    <string name="age">Age</string>
+    <string name="daily_goal">Daily goal</string>
+    <string name="register">Register</string>
+    <string name="login">Log in</string>
+    <string name="logout">Log out</string>
 </resources>
