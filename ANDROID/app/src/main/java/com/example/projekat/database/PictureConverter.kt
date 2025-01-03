@@ -17,8 +17,6 @@ class PictureConverter {
         val bitmap = Bitmap.createBitmap(
             picture.width, picture.height, Bitmap.Config.ARGB_8888
         )
-        //Bitmap.Config.ARGB_8888 je konfiguracija koja definiše način na koji se pikseli skladište u memoriji za Bitmap
-        //  Ova konfiguracija utiče na kvalitet slike i memorijsku potrošnju.
 
         val canvas = Canvas(bitmap)
         picture.draw(canvas)

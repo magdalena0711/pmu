@@ -20,5 +20,4 @@ interface PostDao {
     @Query("DELETE FROM post_table WHERE idP = :id")
     suspend fun deletePost(id: Int)
 
-    //vrlo verovatno ce biti potrebno jos upita
 }

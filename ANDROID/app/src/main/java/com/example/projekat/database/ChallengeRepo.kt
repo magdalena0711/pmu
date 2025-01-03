@@ -12,5 +12,4 @@ class ChallengeRepo @Inject constructor(private val challengeDao: ChallengeDao){
         challengeDao.insertChallenge(challenge)
     }
 
-
 }
